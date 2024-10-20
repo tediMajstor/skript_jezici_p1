@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MET home</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="icon" href="media/M_logo_black.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+      <div class="flex items-center">
+        <img src="media/navbar_logo.png" alt="Museum Icon" class="w-12 h-12 mr-4" style="background-color: transparent;">
+        <span class="text-2xl font-semibold">The Metropolitan Museum of Art</span>
+      </div>
+      <div>
+        <select id="department-select" class="bg-gray-700 text-white px-3 py-2 rounded hover:bg-gray-600">
+          <option value="">Select Department</option>
+          <!-- Populate options dynamically -->
+        </select>
+      </div>
+      <form id="search-form" class="flex items-center">
+        <input type="text" id="search-input" class="p-2 rounded-l bg-gray-700 text-white placeholder-gray-400 focus:outline-none" placeholder="Search...">
+        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-400">Search</button>
+      </form>
+    </nav>     
+  </header>
+
+  <main class="p-8 bg-gray-100 min-h-screen">
+    <section class="text-center mb-8">
+      <h1 class="text-5xl font-extrabold mb-4 text-blue-700">Welcome to MET museum</h1>
+    </section>
+  
+    <section class="mb-8">
+      <img src="media/museum_picture.jpg" alt="Museum Image" class="w-full h-96 object-cover rounded-lg shadow-lg">
+    </section>
+  
+    <section class="bg-white p-6 rounded-lg shadow-md">
+      <p class="text-lg text-gray-700 leading-relaxed">
+        Welcome to our museum! Discover a world of art, history, and culture through our extensive collection of exhibits.
+      </p>
+      <br>
+      <p>
+        To buy pay-what-you-wish tickets online, you must have a New York State billing
+        address. New Jersey and Connecticut students can only buy pay-what-you-wish 
+        tickets in person with valid student ID. Accepted forms of residency verification 
+        include New York State driver’s license, New York State identification card, IDNYC, 
+        current bill or statement with a New York State address, student ID, and New York library card.
+      </p>
+    </section>
+  </main>
+  
+</body>
+<script src="navbar.js"></script>
+</html>

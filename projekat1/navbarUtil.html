@@ -1,0 +1,16 @@
+<nav class="bg-gray-800 text-white px-6 py-4 flex justify-between items-center shadow-md">
+  <div class="flex items-center">
+    <img src="media/navbar_logo.png" alt="Museum Icon" class="w-12 h-12 mr-4" style="background-color: transparent;">
+    <span class="text-2xl font-semibold">The Metropolitan Museum of Art</span>
+  </div>
+  <div>
+    <select id="department-select" class="bg-gray-700 text-white px-3 py-2 rounded hover:bg-gray-600">
+      <option value="">Select Department</option>
+      <!-- Populate options dynamically -->
+    </select>
+  </div>
+  <form id="search-form" class="flex items-center">
+    <input type="text" id="search-input" class="p-2 rounded-l bg-gray-700 text-white placeholder-gray-400 focus:outline-none" placeholder="Search...">
+    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-r hover:bg-blue-400">Search</button>
+  </form>
+</nav>
